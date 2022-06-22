@@ -1,0 +1,18 @@
+Package: com.ginsu.libgscommon
+Version: 1.1.1-1
+Architecture: iphoneos-arm
+Maintainer: Ginsu
+Depends: firmware (>=14.0), preferenceloader
+Filename: ./Debions/com.ginsu.libgscommon.deb
+Size: 9832
+MD5sum: 49ea165479250b84b8f95cd28a7f9e74
+SHA1: 9fd0dc9131aed9a42a173f7ba210ded42d43ca30
+SHA256: 82d0404af97a97d90a7d00a8e400704c8f0c6287860f3f339893a51d288559ef
+Section: Tweaks
+Description: Compatibility: This package is compatible with iOS iOS 14.0 to 15.9.
+             This package contains common things found in all tweaks made by me (Ginsu). I found that keeping these things in one package rather than putting them in every package would be more efficient.
+Author: Ginsu
+Depiction: 
+Icon: 
+Name: GSCommon
+Sileodepiction: 
