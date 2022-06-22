@@ -1,8 +1,8 @@
-Origin: K-Pers
-Label: K-Pers
+Origin: KPers
+Label: KPers
 Suite: stable
 Version: 1.1
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: tweaks, themes, and more.
+Description: KPers repository

@@ -1,0 +1,22 @@
+<package>
+	<id>com.vsz.redeb</id>
+	<name>redeb</name>
+	<version>1.0.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>3.0</miniOS>
+			<maxiOS>9.3.3</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>bash (>= 4.0.17-13), coreutils (>= 8.12-12p), grep (>= 2.5.4-3), sed (>= 4.1.5-7), gawk (>= 3.1.6-2p), apt7 (>= 0.7.25.3-6)</dependencies>
+	<descriptionlist>
+		<description>Repackage any of your tweaks locally, without the need to download it from Cydia again. This is super usefull when there is an update of your until now perfectly working tweak in Cydia and you want to make a backup of the version installed. Normally you wouldn't be able to backup anything because it is possible to fetch only the most current version of your tweak and so you would be lost. Not anymore :)))</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change><![CDATA[ !!! IMPORTANT NOTE !!! BEFORE INSTALLING THIS UPDATE PLEASE BACKUP YOUR /var/mobile/Redeb/debs FOLDER. THIS MUST BE DONE BECAUSE OF THE POSTRM METHOD WHICH UNFORTUNATELLY CAN NOT BE BYPASSED, BUT IS REMOVED IN THIS VERSION OF REDEB. SORRY FOR THAT ! <br><br>
+        Fixed the method which builds the package structure, to be able to handle directories in path as well as filenames which contain space / zero character. e.g. "/Library/Application Support" or "/Library/Themes/ayecon Home Screen.theme",etc ...  ]]></change>
+	</changelog>
+	<links></links>
+</package>
