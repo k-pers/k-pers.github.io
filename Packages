@@ -1,50 +1,37 @@
-Package: com.vsz.localssh
-Version: 1.0-3
-Architecture: iphoneos-arm
-Maintainer: T.Herak <50dc856b@opayq.com>
-Depends: openssh
-Filename: ./debs//com.vsz.localssh_1.0-3_iphoneos-arm.deb
-Size: 1616
-MD5sum: a3002c47afd3a1757bb47727dc3c4e11
-SHA1: be3a4b085358b3bd343f044cd1f1c5487dfc3247
-SHA256: b3e6110e397923dcfdac6327928e4cf06fdbc00fbf1abfb2916db8bdc71f05dd
-Section: Utilities
-Priority: extra
-Description: Enable ssh to localhost for appstore terminal clients such as Prompt 2 or Server Auditor.After installing a new ssh port 50022 will be activated, which should be used when using the Terminal client to log in. To connect through Prompt 2 or Server Auditor, enter the host address as 127.0.0.1 and port as 50022.
-Author: T.Herak <50dc856b@opayq.com>
-Depiction: https://wiety.github.io/cydia/depictions/?p=com.vsz.localssh
-Name: LocalSSH
-
-Package: com.vsz.redeb
-Version: 1.0.3
-Architecture: iphoneos-arm
-Maintainer: T.Herak <50dc856b@opayq.com>
-Depends: bash (>= 4.0.17-13), coreutils (>= 8.12-12p), grep (>= 2.5.4-3), sed (>= 4.1.5-7), gawk (>= 3.1.6-2p), apt7 (>= 0.7.25.3-6)
-Filename: ./debs//com.vsz.redeb_1.0.3_iphoneos-arm.deb
-Size: 3572
-MD5sum: b5aa8718f90044be937b72d9f4e7a1f5
-SHA1: 912a6cf3cea1c725df51bb54ad4f849f27bdfa08
-SHA256: 5ec1491fdf630cdb2cbf218a10557d45e5a23271e775b066553cea543cf31c80
-Section: Utilities
-Priority: extra
-Description: Repackage any of your tweaks locally, without the need to download it from Cydia again. This is super usefull when there is an update of your until now perfectly working tweak in Cydia and you want to make a backup of the version installed. Normally you wouldn't be able to backup anything because it is possible to fetch only the most current version of your tweak and so you would be lost. Not anymore :)))
-Author: T.Herak <50dc856b@opayq.com>
-Depiction: https://wiety.github.io/cydia/depictions/?p=com.vsz.redeb
-Name: redeb
-
-Package: com.vsz.vobec
-Version: 0.0.1-24
-Architecture: iphoneos-arm
-Maintainer: T.Herak
-Installed-Size: 192
-Depends: mobilesubstrate
-Filename: ./debs//com.vsz.vobec_0.0.1-24_iphoneos-arm.deb
-Size: 11748
-MD5sum: 7d39228346df475e64628b2737bb0192
-SHA1: 128f72f8d63e256c187bbcc09a6ffd9928e21b0f
-SHA256: ef2ab6e13c2c76f8a6bd6f09d476e001c071143875885f4972c865b45dc91c72
+Package: es.ubikstyl.sonus12
+Name: Sonus12
+Version: 1.1.1-1
+Description: Chỉnh âm lượng ios 12
+Author: ubik
+Depends: mobilesubstrate, preferenceloader, me.nepeta.libcolorpicker
+Priority: optional
 Section: Tweaks
-Description: remove SB folder blur and SB icon mask blur.
-Author: T.Herak
-Name: vobec
-Depiction: https://wiety.github.io/cydia/depictions/?p=com.vsz.vobec
+Depiction:  ./info/es.ubikstyl.sonus12.html
+SileoDepiction: ./info/es.ubikstyl.sonus12.html
+Architecture: iphoneos-arm
+Maintainer: ubik
+Installed-Size: 612
+Size: 65674
+MD5Sum: 91cff7a7d58be61e6941048a732745d8
+SHA1: 5940a7ba7c0ab8be7e3d32176ad1b9b78f81487a
+SHA256: c295266ad7580e4fb1df3ce45e5409f8f4bf89d22db34582ca444441c3d93dbc
+Filename: /deb/es.ubikstyl.sonus12.deb
+Tag: purpose::extension, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11
+
+Package: com.ginsu.libgscommon
+Name: GSCommon
+Version: 1.1.3
+Description: Gói này chứa những thứ phổ biến được tìm thấy trong tất cả các tinh chỉnh do tôi (Ginsu) thực hiện.Tôi thấy rằng việc giữ những thứ này trong một gói thay vì đặt chúng vào mỗi gói sẽ hiệu quả hơn.
+Author: Ginsu
+Depends: firmware (>=14.0), preferenceloader
+Priority: optional
+Section: Tweaks
+Depiction:  ./info/com.ginsu.libgscommon.html
+SileoDepiction: ./info/com.ginsu.libgscommon.html
+Architecture: iphoneos-arm
+Maintainer: Ginsu
+Size: 98318
+MD5Sum: 2f168d6444df66d37434a8f7b0a7471d
+SHA1: f54f291ed5f540845b63dd8b2eed63bf40a1c249
+SHA256: de3705592f58c8f1043c15b0068c2e3f52edbf7bba5a4503211ac2734918f6db
+Filename: /deb/com.ginsu.libgscommon.deb
