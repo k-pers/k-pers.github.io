@@ -1,0 +1,53 @@
+.left-div {
+  display: inline-block;
+  max-width: 150px;
+  text-align: left;
+  border-radius: 3px;
+  margin: 15px;
+  margin-left: 1px;
+  vertical-align: top;
+}
+
+.right-div {
+  display: inline-block;
+  max-width: 200px;
+  text-align: left;
+  border-radius: 3px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+#pulse {
+  animation: pulse 0.5s ease-in infinite;
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(0.9);
+  }
+
+  75% {
+    transform: scale(1.0);
+  }
+}
+
+body {
+  font-family: 'Bree Serif';
+
+}
+
+.install_button {
+  margin-top: -36px;
+  background-color: transparent;
+  background-color: #0079FF;
+  border-radius: 28px;
+  border: 1px solid #0079FF;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 3px 32px;
+  text-decoration: none;
+  text-shadow: rgb(0, 123, 255) 0px 1px 0px;
+}
