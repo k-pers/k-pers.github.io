@@ -1,7 +1,7 @@
 {
-    "name": "轻松签源",
+    "name": "store",
     "identifier": "xyz.yyyue.esign",
-    "sourceURL": "https://esign.yyyue.xyz/apps.json",
+    "sourceURL": "https://k-pers.github.io/apps.json",
     "apps": [
         {
             "name": "轻松签-ESign",
