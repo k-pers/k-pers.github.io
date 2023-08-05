@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://esign.yyyue.xyz/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title class="i18n">轻松签</title>
+    
+    
+    <meta name="apple-mobile-web-app-title" content="轻松签">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="轻松签是一款免越狱可给ipa签名的工具，具有注入库，去库等功能">
+    <meta name="keywords" content="轻松签 - 免越狱 签名|重签|iOS|ipa|注入|多开|去锁">
+    <meta name="i18n_file" content="index">
+    <meta name="page" content="index">
+    <script src="./轻松签_files/jquery.js.tải xuống"></script>
+    <link rel="stylesheet" href="./轻松签_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./轻松签_files/bootstrap-icons.css">
+    <script src="./轻松签_files/bootstrap.min.js.tải xuống"></script>
+    <link rel="stylesheet" href="./轻松签_files/viewGreen.css">
+    <script src="./轻松签_files/jquery.i18n.properties.js.tải xuống"></script>
+    <script src="./轻松签_files/language.js.tải xuống"></script>
+    <script src="./轻松签_files/cvi_busy_lib.js.tải xuống"></script>
+    <script src="./轻松签_files/nav.js.tải xuống"></script>
+    <script src="./轻松签_files/appInfo.js.tải xuống"></script>
+    
+</head>
+
+<body>
+    <ul class="nav nav-pills">
+        <li id="nav_index" style="margin-left: 20px;" class="active"><a href="https://esign.yyyue.xyz/index.html" data-toggle="tab " class="i18n">首页</a></li>
+        <li id="nav_sign"><a href="https://esign.yyyue.xyz/sign.html" data-toggle="tab " class="i18n">签名</a></li>
+        <li id="nav_update"><a href="https://esign.yyyue.xyz/update.html" data-toggle="tab " class="i18n">更新记录</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle " data-toggle="dropdown" href="https://esign.yyyue.xyz/#" id="language">
+                <span class="i18n">Language</span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li id="nav_zh" class="active"><a href="https://esign.yyyue.xyz/#" onclick="changeLanguage(&#39;zh-CN&#39;)">中文</a></li>
+                <li id="nav_en"><a href="https://esign.yyyue.xyz/#" onclick="changeLanguage(&#39;en&#39;)">English</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div id="header"></div>
+
+    <!--=== Content Part ===-->
+    <div class="container">
+        <!-- logo -->
+        <div id="appicon-bg">
+            <img src="./轻松签_files/ESignLogo200.png" class="appicon">
+        </div>
+
+        <!-- appinfo -->
+        <div style="margin: 10px;">
+            <div id="appinfo">
+                <h2 id="appName" style="color:#333;size:24px; ">轻松签</h2>
+                <div class="label label-info" id="appVersion">4.8.2</div>
+            </div>
+
+            <div style="margin-top:10px;">
+                <span class="label label-info">
+                    <i class="bi bi-apple"></i>
+                    <span class="i18n">适用于iOS11以上设备</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- description -->
+        <div class="description">
+            <div class="i18n" style="text-align: center">轻松签是一款免费的手机ipa签名工具。</div>
+        </div>
+
+        <!-- Start install -->
+        <div style="margin-bottom:30px;margin-top:30px">
+            <div>
+                <a href="https://esign.yyyue.xyz/sign.html" class="btn i18n">证书自签</a>
+            </div>
+
+            <div style="margin-top:20px;display: none;" id="installDiv_i">
+                <a onclick="install()" class="btn i18n" id="installButton" href="itms-services://?action=download-manifest&amp;url=https://esign.yyyue.xyz/yyy/api/esignapp/lastVersion/install">立即安装</a>
+            </div>
+
+            <div style="margin-top:20px">
+                <a href="https://pan.yyyue.xyz/d/esign/esign_4.8.2_unsigned.ipa" rel="nofollow noreferrer" target="_blank" class="btn i18n" id="lzbutton">下载IPA</a>
+            </div>
+
+            <div class="table-responsive tabfont" style="margin-top: 20px; text-align: center">
+                <table class="table table-bordered table-condensed tablecenter" style="text-align: center;">
+                    <caption class="i18n">轻松签各版本对比</caption>
+                    <thead>
+                        <tr>
+                          <th style="width: 40px;">  </th>
+                          <th class="i18n" style="width: 50px;text-align: center;">轻松签</th>
+                          <th class="i18n" style="width: 90px;text-align: center;">轻松签+ A12+</th>
+                          <th class="i18n" style="width: 90px;text-align: center;">轻松签+ iOS15+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="i18n">CPU</td>
+                            <td class="i18n">All</td>
+                            <td>A12 - A15</td>
+                            <td class="i18n">All</td>
+                        </tr>
+                      <tr>
+                        <td class="i18n">设备</td>
+                        <td class="i18n">任意设备</td>
+                        <td>iPhone XS/XR-13</td>
+                        <td class="i18n">任意设备</td>
+                      </tr>
+                      <tr>
+                        <td class="i18n">系统</td>
+                        <td class="i18n">iOS12+</td>
+                        <td>
+                            iOS14.0 - 15.4.1<br>
+                            iOS15.5 beta1 - 4<br>
+                            iOS15.6 beta1 - 5<br>
+                        </td>
+                        <td>
+                            iOS15.0 - 15.4.1<br>
+                            iOS15.5 beta1 - 4<br>
+                            iOS15.6 beta1 - 5<br>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="i18n">证书</td>
+                        <td class="i18n">需要</td>
+                        <td class="i18n">不需要</td>
+                        <td class="i18n">不需要</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div style="margin-top:20px;" id="installYJB">
+                <a onclick="installYJB(1)" class="btn i18n" id="installButtonYJB">安装[轻松签+] A12+</a>
+            </div>
+            <div style="margin-top:20px;" id="installYJB">
+                <a onclick="installYJB(2)" class="btn i18n" id="installButtonYJB">安装[轻松签+] iOS15+</a>
+            </div>
+
+            <div class="i18n" style="text-align: center;margin-top: 20px;">永久版【轻松签+】安装方法：选择设备对应版本，点击安装后，等待安装完成，桌面会出现一个【jetSign】应用（如果手机已将安装jetSign应用，需先删除掉。）打开后点轻松签+，安装轻松签+即可。需要更新轻松签+，直接点重新安装轻松签+即可。</div>
+            
+        </div>
+    </div>
+    <div id="footer" class="pcshow "> Copyright ©2022 ESign Inc. All right reserved </div>
+
+
+</body></html>
